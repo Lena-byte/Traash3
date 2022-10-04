@@ -1,0 +1,441 @@
+ /*-------@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');-------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+body{
+  overflow-x: hidden;
+}
+/*------transition--------*/
+
+.transition-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 101;
+  background-color: #111;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease-out;
+}
+
+.transition-1.is-active {
+  pointer-events: all;
+  opacity: 1;
+}
+/*------*{outline: 1px solid green;
+	}--------*/
+
+.offset:before{
+  display: block;
+  content:"";
+  height: 64px;
+  margin-top: -64px;
+}
+
+
+/*-------Navigation--------*/
+.navbar{
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1.6px;
+}
+
+.navbar-brand img{
+height: 37px;
+}
+.navbar-nav li{
+  padding-right: 12px;
+}
+.navbar-light .navbar-nav .nav-link{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.dropdownMenu{
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f75f31;
+  min-width: 160px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+  list-style: none;
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: black;
+}
+.dropdownMenu:hover .dropdown-content {
+  display: block;
+}
+
+
+/*--------entry page-------*/
+
+.home-inner{
+  background-image: url('fotos/background.jpg'); 
+}
+.caption{
+  width: 100%;
+  max-width: 100%;
+  position: absolute; 
+  top: 50%;
+  z-index: 1; 
+  color: #f75f31;
+  text-transform: uppercase; 
+}
+
+.caption h1{
+  font-size: 70px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-shadow: 1.5px 1.5px 12px black;
+  padding-bottom: 1.5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.btn-lg{
+  border-width: medium;
+  border-radius: 0;
+  padding: 9px 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+.narrow {
+  width: 80%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+.narrow2 {
+  width: 80%;
+  margin: 0 auto 1rem auto;
+  padding-top: 0rem;
+}
+
+/*============= Overview & About section =============*/
+.heading{
+  padding-bottom: 2rem;
+}
+.field img{
+  width: 100%; 
+  margin: -40px 0px 5px 0px; 
+}
+
+.responsive-youtube{
+  overflow:hidden; padding-bottom:56.25%; position:relative; height:0;
+  }
+  
+  .responsive-youtube iframe{
+  left:0; top:0; height:100%; width:100%; position:absolute;
+  }
+
+  .btn-default {
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    color: #f75f31;
+    border-radius: 0;
+  }
+  .btn-default:hover {
+    color: gray;
+  }
+  .narrow h1 {
+      font-size: 2rem;
+      color: #f75f31;
+    }
+  
+  .btn-secondary {
+    border-width: small;
+    border-radius: 0;
+    padding: .4rem 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-color: #f75f31;
+    background-color: #f75f31;
+    color: white;
+  }
+  
+  .btn-secondary:hover,
+  .btn-secondary:focus {
+    border-color: #6e2b0e;
+    background-color: #6e2b0e;
+    color: white;
+  }
+  
+  
+.Xartis img {
+    width: 36%; 
+    float: left;
+    margin: 10px 20px 0 0;
+}
+
+.Rodopi img{
+  width: 38%;
+  float: right;
+  margin: 10px 0 5px 20px; 
+}
+
+.Limni img{
+  width: 39%;
+  float: right;
+  margin: 10px 0 5px 20px; 
+}
+
+.flamingo img{
+  width: 36%;
+  float: left;
+  margin: 10px 20px 0 0; 
+}
+
+.about h5, h4, h3 {
+  color: #f75f31;
+}
+
+hr {
+  color: #f75f31;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+/*----------pictures section-----------*/
+.carousel-item {
+  width: 100%;
+}
+
+#Slider{
+	width: 100%;
+  padding-bottom: 20px;
+}
+
+
+/*--------history page-----------*/
+.paralia img{
+  width: 40%; 
+  float: left; 
+  margin: 0px 20px 0 0; 
+}
+
+.poleis img{
+  width: 40%;
+  float: right; 
+  margin: 10px 0 5px 20px; 
+}
+
+.Democritus img{
+  width: 29%;
+  float: left; 
+  margin: 0px 20px 0 0; 
+}
+
+.katopsi img{
+  width: 36%;
+  float: right; 
+  margin: 10px 0 5px 20px; 
+}
+
+.Economy img{
+  width: 37%;
+  float: left; 
+  margin: 0px 20px 0 0; 
+}
+
+.Anaskafi img{
+  width: 40%; 
+  float: left; 
+  margin: 0px 20px 0 0; 
+}
+.Klazomenioi img{
+  width: 30%; 
+  float: right; 
+  margin: 10px 0 5px 20px;
+}
+.Mouseio img{
+  width: 40%; 
+  clear: both;
+  float: left; 
+  margin: 20px 20px 0 0; 
+}
+
+.MouseioMesa img{
+  width: 35%; 
+  float: right; 
+  margin: 10px 0 5px 20px;
+}
+
+.credits{
+font-size: small;
+display: flow-root;
+}
+
+/*--------work page-----------*/
+.conference img{
+  width: 100%; 
+  margin: 10px 0px 30px 20px;
+}
+
+
+/*--------pictures page-----------*/
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.row .column{
+flex: 25%;
+width: auto;
+overflow: hidden;
+padding: 0 4px;
+height: 100%;
+} 
+.row .column img{
+  margin-top: 2px;
+  margin-bottom: 3px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  filter: grayscale(1) brightness(90%);
+  border-radius: 5px;
+  transition: 0.3s linear;
+}
+.row .column img:hover{
+  filter: grayscale(0) brightness(1);  
+}
+
+.row .omadaPics{
+  flex: 25%;
+  width: 100px;
+  /* overflow: hidden; */
+  padding: 0 4px;
+  height: 100%; 
+  text-align: center;   
+}
+.row .omadaPics img{
+  margin-top: 2px;
+  margin-bottom: 3px;
+  padding-bottom: 10px;
+  width: 50%;
+  cursor: pointer;
+  filter: grayscale(1) brightness(90%);
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+.row .omadaPics img:hover{
+  filter: grayscale(0) brightness(1);  
+}
+.name{
+  color: #f75f31;
+}
+.desc{
+  padding-bottom: 50px;
+}
+
+/*--------footer section-----------*/
+footer{
+  background-color: #000;
+  color: white;
+  padding: 10px 0 10px 0;
+  margin-top: 100px;
+  font-size: smaller;
+
+}
+footer img{
+  height:50px;
+}
+footer .space{
+  margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 680px){
+.caption h1{
+  font-size: 36px;
+  letter-spacing: 2.5px;
+  padding-bottom: 8px;
+}
+.btn-lg{
+  padding: 8px 16px;
+  font-size: 16px;
+}
+.narrow {
+  width: 95%;
+}
+.narrow2 {
+  width: 95%;
+}
+.narrow h1{
+  font-size: 23px;
+}
+#about img{
+  width: 90%;
+  float: none;
+  display: block;
+  margin: 0 0 10px 0;
+}
+.conference img {
+  width: 100%;
+  float: none;
+  display: block;
+  margin: 0 0 10px 0;
+}
+#works img {
+  width: 100%;
+  float: none;
+  display: block;
+  margin: 0 0 10px 0;
+}
+#AbderaHistory img{
+  width: 90%;
+  float: none;
+  display: block;
+  margin: 0 auto;
+  margin: 0 0 10px 0;
+}
+#Anaskafi img{
+  width: 90%;
+  float: none;
+  display: block;
+  margin: 0 auto;
+  margin: 0 0 10px 0;
+}
+
+
+
+footer img{
+  height: 35px;; 
+  
+}
+.row .column{
+  flex: 50%;
+}
+.row .column img{
+  filter: grayscale(0) brightness(80%); 
+ 
+}
+
+}
+@media only screen and (max-width:991px){
+
+  footer{
+    height:40px;   
+  }
+
+}

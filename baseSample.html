@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html>
+    <!DOCTYPE html>
+    <html lang="gr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"><!---for port devices---> 
+        <title>TRAASH</title>
+        
+        <!-- bootstrap 4 includes jQuery -->
+        <link rel="stylesheet" href="https://traashbaggie.gr/TraashDB/vendor/bootstrap/css/bootstrap.css"/>
+        <script src="https://traashbaggie.gr/TraashDB/vendor/jquery/jquery.js"></script>
+        <script src="https://traashbaggie.gr/TraashDB/vendor/bootstrap/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="https://traashbaggie.gr/TraashDB/css/theme.min.css"/>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/feaa09db6c.js" crossorigin="anonymous"></script>
+        
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="fixed.css">
+        <script  defer src="./script.js"></script>
+
+    
+    </head>
+    
+
+<body class="p-1">
+        
+<nav class="navbar navbar-expand-sm navbar-light bg-primary mb-3 border border-danger rounded">
+    <a class="navbar-brand" href="index.html">
+        <img src="https://traashbaggie.gr/TraashDB/img/traash-logo-black-transparent.png" style="height:37px; max-width: 100%;" title="Σχετικά με την εφαρμογή TRAASH Baggie" alt=""/>&nbsp;
+    </a>
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link"
+               title="Dashboard της εφαρμογής">
+                </i>&nbsp;Dashboard&nbsp;
+            </a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+               title="Θέσεις, ευρήματα, εικόνες κτλ ..."
+               href="#" data-toggle="dropdown">
+                </i>&nbsp;Δεδομένα του έργου&nbsp;
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" >
+                    <i class="far fa-flag"></i>&nbsp;Θέσεις και τοποθεσίες&nbsp;
+                </a>
+                <a class="dropdown-item" >
+                    <i class="fas fa-map-marker"></i>&nbsp;Σημεία GIS&nbsp;
+                </a>
+                <div class="dropdown dropdown-divider"></div>
+                <a class="dropdown-item" >
+                    <i class="far fa-gem"></i>&nbsp;Ευρήματα&nbsp;
+                </a>
+                <div class="dropdown dropdown-divider"></div>
+                <a class="dropdown-item" >
+                    <i class="fas fa-images"></i>&nbsp;Εικόνες&nbsp;
+                </a>
+                <a class="dropdown-item" >
+                    <i class="fas fa-book"></i>&nbsp;Βιβλιογραφία&nbsp;
+                </a>
+                <div class="dropdown dropdown-divider"></div>
+                <a class="dropdown-item" >
+                    <i class="fas fa-bookmark"></i> &nbsp;Βιβλιογραφικές αναφορές&nbsp;
+                </a>
+            </div>
+        </li>
+    </ul>
+
+    <!-- Links Aliognewd to the right -->
+    <ul class="navbar-nav ml-auto">
+        <!-- Dropdown -->
+            
+                    <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    <i class="fas fa-tachometer-alt"></i>&nbsp;Εργαλεία διαχειριστή </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" >
+                        <i class="far fa-object-group"></i>&nbsp;Τύποι ευρημάτων  </a>
+                    <a class="dropdown-item" >
+                        <i class="fas fa-boxes"></i>&nbsp;Υλικά ευρημάτων </a>
+                    <div class="dropdown dropdown-divider"></div>
+                    <a class="dropdown-item" >
+                        <i class="fas fa-history"></i>&nbsp;Χρονολογήσεις</a>
+                    <a class="dropdown-item" >
+                        <i class="fas fa-tags"></i>&nbsp;Ετικέτες </a>
+                    <div class="dropdown dropdown-divider"></div>
+                    <a class="dropdown-item">
+                        <i class="fas fa-book-open"></i>&nbsp;Τύποι βιβλιογραφίας </a>
+                    <a class="dropdown-item" >
+                        <i class="fas fa-bookmark"></i>&nbsp;Τύποι βιβλιογραφικής αναφοράς </a>
+                    <div class="dropdown dropdown-divider"></div>
+                    <a class="dropdown-item" >
+                        <i class="fas fa-list-alt"></i>&nbsp;Χρήστες της εφαρμογής </a>
+                </div>
+            </li>
+                    <!-- Change Application Language Menu -->
+        <li class="nav-item dropdown">
+            <a href="#"
+                class="nav-link"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                title="Αλλαγή γλώσσας εφαρμογής">
+                <l class="fas fa-language"></l>
+                Γλώσσα <span class="caret"></span>
+             </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+                            <li class="dropdown-item">
+                   <a title="Αλλαγή γλώσσας σε English"><img alt=""/> English</a>
+                </li>
+                            <li class="dropdown-item">
+                   <a href="#" title="Τρέχουσα γλώσσα: Greek" style="pointer-events: none; cursor: default"><img src="/TraashDB/img/flags/el_GR.png" alt=""/> Greek</a>
+                </li>
+                
+            </ul>
+        </li>
+    </ul>
+</nav>
+        <!-- Page Wrapper -->
+<main class="main">
+    <div class="container-fluid my-3"> 
+                
+               
+                
+<div>
+    <div class="card m-2 border border-primary">
+        <div class="card-header bg-dark border-bottom border-primary">
+            <h3 style="color: gainsboro;"><i class="fas fa-tachometer-alt"></i>&nbsp;TraashBaggie Dashboard - Δείγμα Βάσης Δεδομένων</h3>
+        </div>
+    </div>
+    <div >
+        <div class="row">
+            <div class="col-3 p-2 border border-primary">
+                <h4><i class="far fa-flag" style="color: gainsboro;"></i>&nbsp;<a title="Μετάβαση στην κεντρική σελίδα των αντικειμένων">Θέσεις</a></h4>
+                <div id="sites-piechart" class="col-12" style="height: auto;"></div>
+                <p>
+                    Σύνολο θέσεων: <strong class="text-info">53</strong><br/>
+                    Τελευταία προσθήκη: <a class="text-primary" title="Προβολή λεπτομερειών.">Κόσσυνθος</a> 
+                </p>
+            </div>
+            <div class="col-3 p-2 border border-primary">
+                <h4><i class="fas fa-images" style="color: gainsboro;"></i>&nbsp;<a class="text-primary" title="Μετάβαση στην κεντρική σελίδα των εικόνων">Εικόνες</a></h4>
+                <div id="images-piechart" class="col-12" style="height: auto;"></div>
+                <p>
+                    Σύνολο εικόνων: <strong class="text-info">398</strong><br/>
+                    Τελευταία προσθήκη: <a class="text-primary" title="Προβολή λεπτομερειών.">Βαθμιδωτό πηγάδι όπου βρέθηκε πώρινος πεσσίσκος με νεότερη επιγραφή - λόφος των κοριτσιών</a> 
+                </p>
+
+            </div>
+            <div class="col-3 p-2 border border-primary">
+                <h4><i class="far fa-gem" style="color: gainsboro;"></i>&nbsp;<a class="text-primary" title="Μετάβαση στην κεντρική σελίδα των εικόνων">Ευρήματα</a></h4>
+                <div id="findings-piechart" class="col-12" style="height: auto;"></div>
+                <p>
+                    Συνολο ευρημάτων: <strong class="text-info">718</strong><br/>
+                    Τελευταία προσθήκη: <a class="text-primary" title="Προβολή λεπτομερειών.">Ταφικός πίθος / Δ. Μακρή Ταφικός πίθος</a>
+                </p>
+
+            </div>
+            <div class="col-3 p-2 border border-primary">
+                <h4><i class="fas fa-book" style="color: gainsboro;"></i>&nbsp;<a class="text-primary" title="Μετάβαση στην κεντρική σελίδα των βιβλιογραφίας">Βιβλιογραφία</a></h4>
+                <div id="bibliography-piechart" class="col-12" style="height: auto;"></div>
+                <p>
+                    Σύνολο βιβλιογραφίας: <strong class="text-info">98</strong><br/>
+                    Τελευταία προσθήκη: <a class="text-primary" title="Προβολή λεπτομερειών.">Children&#039;s graves in the cemeteries of Abdera: data and observations </a>
+                </p>
+
+            </div>
+        </div>
+        <div class="narrow"><a class="btn btn-secondary btn-md" href="https://traashbaggie.gr/TraashDB/users/login" target="_blank">ΣΥΝΔΕΣΗ ΧΡΗΣΤΗ</a></div>
+
+    </div>
+</div>
+
+</main>
+
+
+
+
+<!----===================== ΔΕΙΓΜΑΤΑ ΕΥΡΗΜΑΤΩΝ ==================================---->
+
+    
+<!-- Toggler/collapsible Button -->
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsible-navbar">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="card related border border-info m-2">
+    <div class="card-heade bg-info">
+        <h4 class="mt-2" style="color: gainsboro;">&nbsp;Ευρήματα</h4>
+    </div>
+
+            <!-- Aποθήκη αμφορέων -->
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class='table table-sm table-bordered table-dark table-hover table-striped'>
+                <thead>
+                    <h4>Αρχαιολογικός χώρος Αβδήρων / Νότιος Περίβολος / "Αποθήκη Αμφορέων"</h4>
+                    <tr>
+                        <th>Κωδ ΒΔ</th>
+                        <th>Κωδικός</th>
+                        <th>Τύπος ευρήματος</th>
+                        <th>Υλικό ευρήματος</th>
+                        <th>Περιγραφή</th>
+                        <th>Σχόλια</th>
+                        <th>Εικόνες</th>
+                        <th>Βιβλιογραφία</th>
+                       
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                                                <tr>
+                        <td>289</td>
+                        <td> </td>
+                        <td>Αμφορέας</td>
+                        <td>Πηλός</td>
+                        <td>Υπόστρωμα δαπέδου (;) </td>
+                        <td> Οι οξυπύθμενοι αμφορείς βρέθηκαν σε έναν από τους χώρους οικοδομήματος 4ου αιώνα π.Χ.  
+                            Ήταν κομμένοι στη μέση και τοποθετημένοι στο δάπεδο ανάποδα σε σειρές. Από πάνω τους είχε 
+                            τοποθετηθεί οριζόντια μία δεύτερη σειρά αμφορέων. 
+                            Αρχικά το κτήριο είχε ταυτιστεί ως αποθήκη αμφορέων ή κατάστημα πώλησής τους. 
+                            Παρόλο που ο χαρακτηρισμός αυτός έχει διατηρηθεί μέχρι σήμερα, νεότερες έρευνες έχουν αποδείξει πως παρόμοια σύνολα 
+                            αποτελούν σύστημα αποστράγγισης υδάτων, γνωστό από άλλα κτήρια των Αβδήρων και άλλων αρχαίων πόλεων. 
+                            Το ερώτημα θα παραμείνει έως την πλήρη ανασκαφή του κτηρίου. 
+                        </td>
+                        <td><img src="fotos/αποθήκη αμφορέων.png" class="rounded" alt="Αποθήκη αμφορέων"
+                            width="400">
+                        </td>
+                        <td>
+                        <i>ΠΑΕ 1956</i>, σελ. 18, 139
+                        <br><br>Καλλιντζή Κωνσταντίνα, <i>Η χώρα των Αβδήρων. Συμβολή στην αρχαιολογία και ιστορική τοπογραφία του νότιου τμήματος του Νομού Ξάνθης</i>, 
+                            σελ. 1112, εικ. 1447
+                        </td>
+                        
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+            <!-- Αποστρογγυλεμένο -->
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class='table table-sm table-bordered table-dark table-hover table-striped'>
+                <thead>
+                    <h4> Αποστρογγυλεμένο </h4>
+                    <tr>
+                        <th>Κωδ ΒΔ</th>
+                        <th>Κωδικός</th>
+                        <th>Τύπος ευρήματος</th>
+                        <th>Υλικό ευρήματος</th>
+                        <th>Περιγραφή</th>
+                        <th>Σχόλια</th>
+                        <th>Εικόνες</th>
+                        <th>Βιβλιογραφία</th>
+                        
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>232</td>
+                        <td>ΜΑ 7876</td>
+                        <td>Αποστρογγυλεμένο</td>
+                        <td>Πηλός</td>
+                        <td>Αποστρογγυλεμένο όστρακο από το τοίχωμα πίθου</td>
+                        <td>Βρέθηκε μέσα στη σημερινή κοίτη του ποταμού Κόσσυνθου.
+                        </td>
+                        <td><img src="fotos/αποστρογγυλεμενο.png" class="rounded" alt="Αποστρογγυλεμένο"
+                            width="400">
+                        </td>
+                        <td>Καλλιντζή Κωνσταντίνα, <i>Η χώρα των Αβδήρων. Συμβολή στην αρχαιολογία και ιστορική τοπογραφία του νότιου τμήματος του Νομού Ξάνθης</i>, 
+                            σελ. 369, εικ. 373
+                        </td>
+                        
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+                   <!-- Κεραμοσκεπής -->
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class='table table-sm table-bordered table-dark table-hover table-striped'>
+                <thead>
+                    <h4>Κεραμοσκεπής τάφος</h4>
+                    <tr>
+                        <th>Κωδ ΒΔ</th>
+                        <th>Κωδικός</th>
+                        <th>Τύπος ευρήματος</th>
+                        <th>Υλικό ευρήματος</th>
+                        <th>Περιγραφή</th>
+                        <th>Σχόλια</th>
+                        <th>Εικόνες</th>
+                        <th>Βιβλιογραφία</th>
+                        
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                        <td>791</td>
+                        <td></td>
+                        <td>Κεραμίδα</td>
+                        <td>Πηλός</td>
+                        <td>Κεραμοσκεπής τάφος </td>
+                        <td> Στον αγρό του Στ. Τσάκου, όπου έχει εντοπιστεί λιμενική κατασκευή, στην νότια παρυφή της τομής 3 και σε βάθος 1.10 μ. 
+                            αποκαλύφθηκε σειρά καλυπτήρων κεράμων, διαστάσεων 0,63x0,50, τοποθετημένοι σε σειρά, οι οποίοι θα πρέπει να ανήκουν 
+                            σε κεραμοσκεπή τάφο.
+                        </td>
+                        <td><img src="fotos/κεραμοσκεπής.png" class="rounded" alt="Κεραμοσκεπής"
+                            width="400">
+                        </td>
+                        <td> <i>ΑΔ 20 (1965) </i>Μέρος Β΄3 Χρονικά, 
+                            σελ. 459, πίν. 560α<br><br>
+                            Καλλιντζή Κωνσταντίνα, <i>Η χώρα των Αβδήρων. Συμβολή στην αρχαιολογία και ιστορική τοπογραφία του νότιου τμήματος του Νομού Ξάνθης</i>, 
+                            σελ. 1220
+                        </td>
+                        
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    
+<!------------------------- ΤΕΛΟΣ ΔΕΙΓΜΑΤΩΝ ---------------------->
+
+
+
+
+
+
+
+        <footer class="border-top border-primary">
+           
+            <p class="text-center">
+                <a href="https://www.elidek.gr/" target="_blank" title="Με τη χορηγία του ΕΛΙΔΕΚ.">
+                    <img src="https://traashbaggie.gr/TraashDB/img/elidek-logo_el_GR.png" class="img-fluid" style="height:100px" alt=""/>
+                </a>
+            </p>
+        </footer>
+    </body>
+
+    
+           
+</html>
