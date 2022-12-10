@@ -7,6 +7,9 @@
 body{
   overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth;
+}
 /*------transition--------*/
 
 .transition-1 {
@@ -64,7 +67,6 @@ height: 37px;
   position: absolute;
   background-color: #f75f31;
   min-width: 160px;
-  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
   z-index: 1;
   list-style: none;
 }
@@ -85,26 +87,44 @@ height: 37px;
 /*--------entry page-------*/
 
 .home-inner{
-  background-image: url('fotos/background.jpg'); 
+  background-image: url('fotos/background3B&W.jpg'); 
+  /* filter: grayscale(100%); */
 }
 .caption{
   width: 100%;
   max-width: 100%;
   position: absolute; 
   top: 50%;
-  z-index: 1; 
-  color: #f75f31;
-  text-transform: uppercase; 
+  /* z-index: 1;  */
+  color: #E1D9D1;
 }
 
 .caption h1{
-  font-size: 70px;
-  font-weight: 500;
+  font-size: 120px;
+  font-weight: 400;
   letter-spacing: 5px;
-  text-shadow: 1.5px 1.5px 12px black;
+  text-shadow: 10px 10px 12px black;
   padding-bottom: 1.5px;
+  padding-top: 30px;
+  margin-top: -90px;
   font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase; 
 }
+
+.caption h2{
+  font-size: 40px;
+  color: #E1D9D1;
+  letter-spacing: 5px;
+  padding-bottom: 1.5px;
+  margin-bottom: 100px;
+  text-shadow: 10px 10px 12px black;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: capitalize;
+}
+h2 span {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .btn-lg{
   border-width: medium;
   border-radius: 0;
@@ -206,7 +226,7 @@ height: 37px;
 }
 
 hr {
-  color: #f75f31;
+  color: white;
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -287,6 +307,11 @@ display: flow-root;
 }
 
 /*--------work page-----------*/
+.poster img{
+  width: 100%; 
+  margin: 10px 0px 30px 20px;
+}
+
 .conference img{
   width: 100%; 
   margin: 10px 0px 30px 20px;
@@ -367,7 +392,12 @@ footer .space{
 
 @media only screen and (max-width: 680px){
 .caption h1{
-  font-size: 36px;
+  font-size: 60px;
+  letter-spacing: 2.5px;
+  padding-bottom: 8px;
+}
+.caption h2{
+  font-size: 30px;
   letter-spacing: 2.5px;
   padding-bottom: 8px;
 }
