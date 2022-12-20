@@ -1,6 +1,7 @@
+
 window.onload = () => { 
   const transition_el = document.querySelector('.transition');
-  const anchors = document.querySelectorAll('.nav-item:not(.dropdown):not(.dropdown-item)');
+  const anchors = document.querySelectorAll('nav-link');
 
 
   setTimeout(() => {
@@ -28,10 +29,9 @@ window.onload = () => {
   
 }
 
-//nav-toggler
-const navLinks = document.querySelectorAll('.nav-item:not(.dropdown)')
-const menuToggle = document.getElementById('navbarResponsive')
-const bsCollapse = new bootstrap.Collapse(menuToggle)
-navLinks.forEach((l) => {
-    l.addEventListener('click', () => { bsCollapse.toggle() })
-})
+
+$('.dropdownMenu').on('click', function(){
+  if(!$( this ).hasClass('dropdown-content')){
+      $('.navbar-collapse').collapse('hide');
+  }
+});
